@@ -21,7 +21,6 @@ fun <T> checkType(args : T): String {
         is Map<*, *> -> "Yes! it's Map"
         else -> "Yes! it's ${args!!::class.simpleName.toString()}"
     }
-
 }
 
 fun main() {
