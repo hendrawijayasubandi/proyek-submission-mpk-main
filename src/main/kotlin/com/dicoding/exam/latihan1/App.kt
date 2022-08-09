@@ -12,30 +12,11 @@
 
 package com.dicoding.exam.latihan1
 
-fun main() {
-    val numbers = 1.rangeTo(10)
-    val evenNumbers = numbers.filter(::isEvenNumber)
-
-    println(evenNumbers)
-}
-
 fun isEvenNumber(number: Int) = number % 2 == 0
 
-/**
- *  TODO 2
- *  Sesuaikan fungsi di bawah ini dengan kode untuk mengecek apakah parameter number
- *  lebih dari 5
- */
-fun moreThanFive(number: Int) = false
+fun moreThanFive(number: Int) = number > 5
 
-/**
- *  TODO 3
- *  Sesuaikan fungsi di bawah ini agar dapat menghasilkan nilai akhir dengan
- *  rumus:
- *
- *      param * ( param + 10 )
- */
-fun result(number: Int) = 0
+fun result(number: Int) = number * (number + 10)
 
 fun main() {
     val listNumber = 1.rangeTo(100)
