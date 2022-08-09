@@ -12,31 +12,22 @@
 
 package com.dicoding.exam.latihan3
 
-/**
- *  TODO
- *  Lengkapi fungsi di bawah ini agar dapat mengembalikkan tipe nilai sesuai dengan
- *  parameter yang dilampirkan. Contohnya seperti berikut:
- *
- *  input: checkType(10)
- *  output: "Yes! it's Integer"
- *
- *  Berikut adalah beberapa tipe nilai yang wajib ada.
- *  • Integer
- *  • String
- *  • Boolean
- *  • Double
- *  • List<String>
- *  • Map<String, String>
- *
- */
-fun <T> checkType(args: T): String {
-    return ""
+fun <T> checkType(args : T): String {
+    return when(args){
+        is Int -> "Yes! it's Integer"
+        is Boolean -> "Yes! it's Boolean"
+        is Double -> "Yes! it's Double"
+        is List<*> -> "Yes! it's List"
+        is Map<*, *> -> "Yes! it's Map"
+        else -> "Yes! it's ${args!!::class.simpleName.toString()}"
+    }
+
 }
 
 fun main() {
     println(
         """
-        '[10, 9, 8 , 6]' is List? ${checkType(listOf(10, 9, 8, 6))}
+        '[10, 9, 8 , 6]' is List? ${checkType(listOf(10,9,8,6))}
         'Dicoding Indonesia' is String? ${checkType("Dicoding Indonesia")}
         'True' is Boolean? ${checkType(true)}
         '10.01' is List? ${checkType(10.01)}

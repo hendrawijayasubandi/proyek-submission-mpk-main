@@ -16,30 +16,15 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
 
-/**
- *  TODO 1
- *  Sesuaikan fungsi di bawah ini dengan kriteria seperti berikut:
- *
- *     - Jadikan sebagai suspending function dengan menambahkan suspend operator
- *     - Menambahkan delay 3 detik
- *     - Mengembalikkan nilai kembalian hasil dari perhitungan denngan rumus valueA + valueB
- *
- */
 suspend fun sum(valueA: Int, valueB: Int): Int {
-    return 0
+    delay(300L)
+
+    return ValueA + ValueB
 }
 
-/**
- *  TODO 2
- *  Sesuaikan fungsi di bawah ini dengan kriteria seperti berikut:
- *
- *     - Jadikan sebagai suspending function dengan menambahkan suspend operator
- *     - Menambahkan delay 2 detik
- *     - Mengembalikkan nilai kembalian hasil dari perhitungan denngan rumus valueA * valueB
- *
- */
-suspend fun multiple(valueA: Int, valueB: Int): Int {
-    return 0
+suspend fun tes(valueA: Int, valueB: Int): Int {
+    delay(2000L)
+    return valueA * valueB
 }
 
 fun main() = runBlocking {

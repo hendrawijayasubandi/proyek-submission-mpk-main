@@ -12,27 +12,16 @@
 
 package com.dicoding.exam.latihan2
 
-/**
- *  TODO 1
- *  Sesuaikan fungsi di bawah ini agar dapat mengembalikkan nilai dengan rumus
- *  perhitungan berikut:
- *
- *      valueA + (valueB - valueC)
- *
- *  Jika valueC bernilai null, silakan tetapkan nilai 50 sebagai nilai default-nya
- */
 fun calculate(valueA: Int, valueB: Int, valueC: Int?): Int {
-    return 0
+    return if (valueC == null) {
+        valueA + (valueB - (valueC ?: 50))
+    } else {
+        valueA + (valueB - valueC)
+    }
 }
 
-/**
- *  TODO 2
- *  Sesuaikan fungsi di bawah ini agar dapat mengembalikkan text seperti berikut:
- *
- *      Result is ${result}
- */
 fun result(result: Int): String {
-    return ""
+    return "Result is ${result}"
 }
 
 fun main() {
