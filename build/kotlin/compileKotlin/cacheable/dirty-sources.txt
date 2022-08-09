@@ -1,0 +1,5 @@
+D:\Dicoding\proyek-submission-mpk-main\src\main\kotlin\com\dicoding\exam\latihan2\App.kt
+D:\Dicoding\proyek-submission-mpk-main\src\main\kotlin\com\dicoding\exam\latihan4\App.kt
+D:\Dicoding\proyek-submission-mpk-main\src\main\kotlin\com\dicoding\exam\latihan3\App.kt
+D:\Dicoding\proyek-submission-mpk-main\src\main\kotlin\com\dicoding\exam\latihan1\App.kt
+D:\Dicoding\proyek-submission-mpk-main\src\main\kotlin\com\dicoding\exam\latihan5\App.kt
