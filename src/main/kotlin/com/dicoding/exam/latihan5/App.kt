@@ -21,7 +21,7 @@ suspend fun sum(valueA: Int, valueB: Int): Int {
     return valueA + valueB
 }
 
-suspend fun tes(valueA: Int, valueB: Int): Int {
+suspend fun multiple(valueA: Int, valueB: Int): Int {
     delay(2000L)
     return valueA * valueB
 }
