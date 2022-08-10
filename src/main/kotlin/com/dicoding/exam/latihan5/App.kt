@@ -17,9 +17,8 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
 
 suspend fun sum(valueA: Int, valueB: Int): Int {
-    delay(300L)
-
-    return ValueA + ValueB
+    delay(3000L)
+    return valueA + valueB
 }
 
 suspend fun tes(valueA: Int, valueB: Int): Int {
