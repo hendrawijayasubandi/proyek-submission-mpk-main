@@ -13,11 +13,7 @@
 package com.dicoding.exam.latihan2
 
 fun calculate(valueA: Int, valueB: Int, valueC: Int?): Int {
-    return if (valueC == null) {
-        valueA + (valueB - (valueC ?: 50))
-    } else {
-        valueA + (valueB - valueC)
-    }
+    return valueA + (valueB - (valueC ?: 50))
 }
 
 fun result(result: Int): String {
